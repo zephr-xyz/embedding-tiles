@@ -172,7 +172,7 @@ The visual-only dataset contains only POIs where `visual_description` (field 14)
 | With document embedding (768d) | 12,406 |
 | With embedding_document | 12,406 |
 | With visual_description | 2,245 |
-| With visual_embedding (768d) | 1,225 |
+| With visual_embedding (768d) | 2,245 |
 | With mapillary_ids | 4,246 |
 | With entrance coordinates | 12,406 |
 | With enclosing_roads | 11,898 |
@@ -185,7 +185,7 @@ The visual-only dataset contains only POIs where `visual_description` (field 14)
 | Total POIs | 2,245 |
 | With document embedding (768d) | 2,245 |
 | With visual_description | 2,245 |
-| With visual_embedding (768d) | 1,225 |
+| With visual_embedding (768d) | 2,245 |
 | With mapillary_ids | 1,852 |
 
 ## Enrichment Sources
