@@ -16,17 +16,17 @@ Each tile is available in two formats: `.pb` (protobuf, compact) and `.json` (hu
 Boulder tiles are publicly hosted on S3:
 
 ```
-https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/embedding-tiles-overture/z14/x{X}_y{Y}.pb
-https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/embedding-tiles-overture/z14/x{X}_y{Y}.json
+https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/waypoint-tiles-overture/z14/x{X}_y{Y}.pb
+https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/waypoint-tiles-overture/z14/x{X}_y{Y}.json
 ```
 
 **Example:**
 ```bash
 # Fetch a tile covering downtown Boulder
-curl -O https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/embedding-tiles-overture/z14/x3401_y6200.pb
+curl -O https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/waypoint-tiles-overture/z14/x3401_y6200.pb
 
 # Fetch the JSON version
-curl -O https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/embedding-tiles-overture/z14/x3401_y6200.json
+curl -O https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/waypoint-tiles-overture/z14/x3401_y6200.json
 ```
 
 ## Tile Format
@@ -314,7 +314,7 @@ for wp in tile["waypoints"]:
 ```javascript
 // Using protobuf.js
 const response = await fetch(
-  'https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/embedding-tiles-overture/z14/x3401_y6200.pb'
+  'https://zephrpoint-public-models.s3.us-east-2.amazonaws.com/waypoint-tiles-overture/z14/x3401_y6200.pb'
 );
 const buffer = await response.arrayBuffer();
 const tile = WaypointsData.decode(new Uint8Array(buffer));
